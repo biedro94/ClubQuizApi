@@ -18,6 +18,7 @@ namespace QuizApi.Controllers
 
         // GET: Quizs
         [HttpGet]
+        [Route("/Quizs")]
         public string Index()
         {
             string json = JsonConvert.SerializeObject(db.Quizs.ToList(), Formatting.Indented);
